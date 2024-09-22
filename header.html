@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        header {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #8d89e0;
+        }
+        .logo{
+            width: 230px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .logo img {
+            width: 100px;
+            
+        }
+        .user-options {
+            display: flex;
+            align-self: last baseline;
+        }
+        .user-options img{
+            width: 16px;
+            margin-left: 0px;
+        }
+        .user-options a {
+            width: 90px;
+            text-align: center;
+            color: #972ee7;
+        }
+        nav {
+            background-color: #1dea6c;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-menu {
+            list-style: none; /* Bỏ bullet */
+            padding: 0;
+            margin: 0;
+            display: flex; /* Đưa các thẻ li lên một hàng */
+        }
+        .nav-menu li {
+            margin-right: 20px;
+        }
+        .nav-menu li:last-child {
+            margin-right: 0;
+        }
+        .nav-menu a {
+            color: white;
+            text-decoration: none; /* Bỏ gạch chân mặc định */
+            text-transform: uppercase; /* Viết hoa */
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .nav-menu a:hover {
+            text-decoration: underline; /* Gạch chân khi rê chuột vào */
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+        .search-box input {
+            width: 300px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px 0 0 3px; /* Bo góc trái */
+        }
+        .search-box button {
+            padding: 5px 10px;
+            border: none;
+            background-color: #f1964b;
+            border-radius: 0 3px 3px 0; /* Bo góc phải */
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng cho nút */
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .search-box button:hover {
+            background-color: #ae2b73; /* Màu nền nút khi rê chuột */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng khi rê chuột */
+        }
+        .search-box input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo"><br>
+            <b>WELCOME TO NHÀ SÁCH TRI THỨC</b>
+        </div>
+        <div class="user-options">
+            <a href="#">Đăng nhập</a>
+            <a href="#">Đăng ký</a>
+            <a href="#">Giỏ hàng</a>
+        </div>
+    </header><br>
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Hãy nhập tên sách cần tìm">
+                <button type="button">Tìm sách</button>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
